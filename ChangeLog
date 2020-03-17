@@ -1,23 +1,24 @@
 2020-03-15, Version 5.11.0
-	* collectd: A Code of Conduct has been added. Thanks to octo. #3401
+	* collectd: A Code of Conduct has been added. Thanks to Florian Forster.
+	  #3401
 	* text protocol: Support for meta_data in PUTVAL has been added. Thanks
-	  to RafaelMarinheiro, Dagobert Michelsen. #3381, #2726
+	  to Rafael Marinheiro, Dagobert Michelsen. #3381, #2726
 	* utils_cache: Internal API has changed - exposed meta_data_toc
 	  function. Thanks to Javier Kohen. #3339
 	* filter_chain: Auto load matches and targets if AutoLoadPlugin option
-	  is set. Thanks to manuelluis. #1034
-	* AMQP plugin: TLS support has been added. Thanks to mbakhoff. #3391
+	  is set. Thanks to Manuel Luis Sanmartín Rozada. #1034
+	* AMQP plugin: TLS support has been added. Thanks to Märt Bakhoff. #3391
 	* Battery plugin: Read from Linux sysfs charge files has been added.
-	  Thanks to maclomhair. #3190
+	  Thanks to Nimrod Maclomhair. #3190
 	* Buddyinfo plugin: New plugin for memory fragmentation info has been
-	  added. Thanks to asafkahlon. #3303
+	  added. Thanks to Asaf Kahlon. #3303
 	* capabilities plugin: New plugin to read static platform data has been
 	  added. Thanks to Kamil Wiatrowski, Dagobert Michelsen. #3384, #3292
 	* DCPMM plugin: New plugin for Intel Optane DC Presistent Memory (DCPMM)
 	  has been added. Thanks to Hari TG. #3274
 	* DF plugin: LogOnce option has been added. Thanks to themylogin. #2910
 	* DPDK Telemetry plugin: New plugin to fetch DPDK metrics (with intent
-	  to replace dpdk_stat) has been added. Thanks to reshmapattan. #3273
+	  to replace dpdk_stat) has been added. Thanks to Reshma Pattan. #3273
 	* Disk plugin: A native (sysctl-based) implementation for NetBSD has
 	  been added. Thanks to Edgar Fuß, Dagobert Michelsen. #3379, #3334
 	* GPU_Nvidia plugin: Configurable plugin instance by GPU name
@@ -29,29 +30,31 @@
 	* Java plugin: Support boolean input has been added. Thanks to Caden.
 	  #3044
 	* Logparser plugin: New plugin for filtering and parsing log messages
-	  has been added. Thanks to Kamil Wiatrowski, krzysztofx, mmozejkx,
-	  aboczkox, Radoslaw Jablonski. #3045
+	  has been added. Thanks to Kamil Wiatrowski, Krzysztof Matczak,
+	  Marcin Możejko, Adrian Boczkowski, Radosław Jabłonski. #3045
 	* Network plugin: New metadata "network:ip_address" has been added.
 	  Thanks to Takuro Ashie. #3191
 	* NFS plugin: An implementation for NetBSD (using sysctl) has been
 	  added. Thanks to Edgar Fuß, Dagobert Michelsen. #3377, #3333
 	* NUT plugin: Support for the "output.realpower" value from the ups code
-	  has been added. Thanks to elratt0r. #2528
+	  has been added. Thanks to Michael Poetters. #2528
 	* Redfish plugin: New read plugin to collect out-of-band sensor data
-	  from Redfish endpoints has been added. Thanks to mmozejkx, aboczkox,
-	  mkobyli, Krzysztof Kepka, mansingh82, Zoltan Szabo. #2926
+	  from Redfish endpoints has been added. Thanks to Marcin Możejko,
+	  Adrian Boczkowski, Michal Kobyliński, Krzysztof Kepka, Man Singh,
+	  Zoltan Szabo. #2926
 	* Slurm plugin: The new SLURM plugin gathers metrics from the SLURM
 	  workload manager has been added. Thanks to Pablo Llopis. #3037
 	* Tail_CSV plugin: FieldSeparator option has been added. Thanks to
-	  Dheeraj. #3394
+	  Dheeraj Gupta. #3394
 	* UBI plugin: The new "ubifs" plugin reports block state for flash
-	  memory devices with UBIFS filesystem has been added. Thanks to Pticon.
-	  #3204
+	  memory devices with UBIFS filesystem has been added. Thanks to
+	  Pierre Lebleu. #3204
 	* Write_HTTP plugin: Ability to configure cURL statistics has been
-	  added. Thanks to n2yen. #3265
+	  added. Thanks to Nelson. #3265
 	* Write_Influxdb_UDP plugin: New plugin to send values to InfluxDB using
-	  line protocol via udp has been added. Thanks to carlospeon. #3162
-	* Zookeeper plugin: 'quorum' stat has been added. Thanks to chris9871.
+	  line protocol via udp has been added. Thanks to Carlos Peón Costa.
+	  #3162
+	* Zookeeper plugin: 'quorum' stat has been added. Thanks to Chris Brown.
 	  #2991
 	* collectd: Missing package in specfile has been fixed. Thanks to
 	  Fabien Wernli. #3399
@@ -92,7 +95,7 @@
 	  to Christian W. Zuckschwerdt. #3131
 	* CPU plugin, Memory plugin, Swap plugin, UUID plugin: Contain use of
 	  sysctl / sysctrlbyname to BSD variants, as deprecated on Linux. Thanks
-	  to zebity. #3342
+	  to Zebity Spring. #3342
 	* Exec plugin: Select has been replaced with poll to allow more then
 	  1024 open file descriptors. Thanks to Kamil Wiatrowski. #3363
 	* GPU_Nvidia plugin: Build issues has been fixed.
@@ -108,7 +111,7 @@
 	* Write_Riemann plugin: Memory leak has been fixed.
 	  Thanks to Fabien Wernli.  #3351
 	* Write_Stackdriver plugin: NaN value handing with gauge metrics has
-	  been fixed. Thanks to jaroslawprzybylowicz. #3226
+	  been fixed. Thanks to Jaroslaw Przybylowicz. #3226
 
 2019-10-17, Version 5.10.0
 	* turbostat plugin: Power metrics update for recent server CPUs. Thanks
