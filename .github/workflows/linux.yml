@@ -9,9 +9,6 @@ jobs:
       fail-fast: false
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: recursive
       - name: Install dependency packages
         run: |
           sudo apt update
