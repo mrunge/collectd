@@ -14,7 +14,6 @@ jobs:
           sudo apt update
           sudo apt install -y -V \
             autotools-dev \
-            iptables-dev \
             libatasmart-dev \
             libcap-dev \
             libcurl4-gnutls-dev \
@@ -75,6 +74,7 @@ jobs:
         run: |
           ./configure \
             --disable-barometer \
+            --disable-iptables \
             --disable-varnish \
             --disable-xmms
       - name: make
