@@ -129,6 +129,7 @@ non_standard_toolchains_task:
       allow_failures: false
       skip_notifications: false
       configure_script:
+        - sudo apt install -y libstatgrab-dev
         - ./build.sh
         - gcc --version
         - >
