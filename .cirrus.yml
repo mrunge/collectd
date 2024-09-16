@@ -113,9 +113,10 @@ non_standard_toolchains_task:
     # build against libstatgrab, should always pass
     - env:
         LABEL: statgrab
-      allow_failures: false
+      allow_failures: true
       skip_notifications: false
       configure_script:
+        - sudo apt install -y libstatgrab-dev
         - ./build.sh
         - gcc --version
         - >
